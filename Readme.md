@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Юлия Симонова](https://up.htmlacademy.ru/adaptive/20/user/1363781).
-* Наставник: `Неизвестно`.
+* Наставник: [Эрик Спичак] (https://htmlacademy.ru/profile/id801243).
 
 ---
 
