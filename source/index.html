@@ -4,9 +4,95 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
   </head>
-  <body>
+  <body class="page__body">
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img src="img/logo.svg" width="74" height="23" alt="Логотип Pink">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Закрыть меню</span>
+        </button></button>
+         <div class="main-nav__wrapper">
+          <ul class="main-nav__item">
+            <li class="main-nav__item main-nav__item--active">
+              <a>Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+    <main class="page-main">
+      <h1 class="visually-hidden">Pink - cайт фотоприложения для раскрашивания серых будней</h1>
 
+      <section class="main-header">
+        <h2 class="main-header__slogan">Взгляните на жизнь иначе!</h2>
+        <div class="main-header__photo">
+          <img src="img/iphone_screen-2">
+        </div>
+        <div class="main-header__downloads downloads">
+          <a class="downloads__button">Скачать приложение</a>
+        <div class="downloads__app">
+          <ul class="downloads__list">
+            <li class="downloads__item">
+              <a class="downloads__link downloads__link--apple" href="#">
+                <img src="img/Apple" width="47" height="56" alt="Приложение для iOS">
+              </a>
+               </li>
+            <li class="downloads__item">
+              <a class="downloads__link downloads__link--android" href="#">
+                <img src="img/Android" width="43" height="46" alt="Приложение для Android">
+              </a>
+            </li>
+            <li class="downloads__item">
+              <a class="downloads__link downloads__link--windows" href="#">
+                <img src="img/Windows" width="46" height="46" alt="Приложение для Windows">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="downloads__decscription"> Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
+      </section>
+
+       <section class="advantages">
+         <h2 class="advantages__title">Устали от серости мегаполиса? Нам есть, что вам предложить!</h2>
+         <div class="advantages__wrapper">
+            <ul class="advantages__list">
+              <li class="advantages__item">
+                <h3 class="advantages__title">Поднимает настроение</h3>
+                <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+              </li>
+            </ul>
+            <ul class="advantages__list">
+              <li class="advantages__item">
+                <h3 class="advantages__title">Меняет мир вокруг</h3>
+                <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              </li>
+            </ul>
+            <ul class="advantages__list">
+              <li class="advantages__item">
+                <h3 class="advantages__title">Заводит новых друзей</h3>
+                <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+              </li>
+            </ul>
+          </div>
+          <div class="advantages__example">
+            <img src="img/iphone_screen-3.png">
+          </div>
+        </section>
+
+    </main>
   </body>
 </html>
+
