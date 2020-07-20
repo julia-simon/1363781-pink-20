@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img src="img/logo.svg" width="74" height="23" alt="Логотип Pink">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Закрыть меню</span>
+        </button></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__item">
+            <li class="main-nav__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item main-nav__item--active">
+              <a href="#">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-inner">
+      <h1 class="visually-hidden">Галерея фотографий</h1>
+      <div class="inner-header">
+        <h2 class="inner-header__slogan">Фотографии пользователей</h2>
+      </div>
+      <section class="galery">
+        <p class="galery__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        <article class="photo-items photo-items--day">
+        <div class="photo-day__wrapper">
+          <span class="photo-items__text">Панорама дня</span>
+          <img src="img/photo1" width="" height="" alt="Фото дня">
+          <span class="photo-items__author">Анна</span>
+          <time datetime="2020-07-18T09:00" class="photo-items__date">5 минут назад</time>
+          <p class="photo-items__description">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+          <button class="photo-items__like-button" type="button"></button>
+          <span class="photo-items__like-count">Нравится: 215</span>
+        </div>
+        </article>
+
+        <article class="photo-items">
+        <div class="photo-items__wrapper">
+            <img class="photo-item__picture" src="img/photo2" width="" height="" alt="Фотография 1">
+            <span class="photo-items__author">Левон</span>
+            <time datetime="2020-07-18T09:00" class="photo-items__date">5 часов назад</time>
+            <p class="photo-items__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <button class="photo-items__like-button" type="button"></button>
+            <span class="photo-items__like-count">Нравится: 356</span>
+          </div>
+
+          <div class="photo-items__wrapper">
+            <img class="photo-item__picture" src="img/photo3" width="" height="" alt="Фотография 2">
+            <span class="photo-items__author">Антон</span>
+            <time datetime="2020-07-18T09:00" class="photo-items__date">12 часов назад</time>
+            <p class="photo-items__description">Соседи будут рады!</p>
+            <button class="photo-items__like-button" type="button"></button>
+            <span class="photo-items__like-count">Нравится: 666</span>
+          </div>
+
+          <div class="photo-items__wrapper">
+            <img class="photo-item__picture" src="img/photo4" width="" height="" alt="Фотография 3">
+            <span class="photo-items__author">Борис</span>
+            <time datetime="2020-07-18T09:00" class="photo-items__date">20 часов назад</time>
+            <p class="photo-items__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <button class="photo-items__like-button" type="button"></button>
+            <span class="photo-items__like-count">Нравится: 215</span>
+          </div>
+
+          <div class="photo-items__wrapper">
+            <img class="photo-item__picture" src="img/photo5" width="" height="" alt="Фотография 4">
+            <span class="photo-items__author">Сергей</span>
+            <time datetime="2020-07-18T09:00" class="photo-items__date">25 часов назад</time>
+            <p class="photo-items__description">Самая кубанская в миру!</p>
+            <button class="photo-items__like-button" type="button"></button>
+            <span class="photo-items__like-count">Нравится: 4</span>
+          </div>
+
+          <div class="photo-items__wrapper">
+            <img class="photo-item__picture" src="img/photo6" width="" height="" alt="Фотография 5">
+            <span class="photo-items__author">Максим</span>
+            <time datetime="2020-07-18T09:00" class="photo-items__date">40 часов назад</time>
+            <p class="photo-items__description">Где снег-то?</p>
+            <button class="photo-items__like-button" type="button"></button>
+            <span class="photo-items__like-count">Нравится: 150</span>
+          </div>
+
+          <div class="photo-items__wrapper">
+            <img class="photo-item__picture" src="img/photo7" width="" height="" alt="Фотография 6">
+            <span class="photo-items__author">Надежда</span>
+            <time datetime="2020-07-18T09:00" class="photo-items__date">45 часов назад</time>
+            <p class="photo-items__description">Всем GM и взаимные лайки</p>
+            <button class="photo-items__like-button" type="button"></button>
+            <span class="photo-items__like-count">Нравится: 2560</span>
+          </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+      <div class="page-footer__logo">
+        <img src="img/logo-footer.svg" width="59" height="40" alt="Логотип Pink">
+        <img src="img/lofo-text.svg" width="74" height="23" alt="Pink">
+      </div>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--tweeter" href="#">
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="#"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img src="img/logo-academy">
+          </a>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
