@@ -3,12 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="img/logo.svg" width="74" height="23" alt="Логотип Pink">
+      <div class="page-header__logo">
+      <a>
+        <img src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип Pink">
       </a>
+    </div>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Закрыть меню</span>
@@ -36,12 +39,15 @@
       <h1 class="visually-hidden">Pink - cайт фотоприложения для раскрашивания серых будней</h1>
 
       <section class="main-header">
-        <h2 class="main-header__slogan">Взгляните на жизнь иначе!</h2>
         <div class="main-header__photo">
-          <img src="img/iphone_screen-2">
+          <img class="main-header__photo2" src="img/iphone-hand-desktop@1x.png" height="320">
         </div>
-        <div class="main-header__downloads downloads">
-          <a class="downloads__button">Скачать приложение</a>
+      </section>
+
+        <section class="downloads">
+        <div class="downloads__btn">
+          <a class="downloads__button" href="#">Скачать приложение</a>
+        </div>
         <div class="downloads__app">
           <ul class="downloads__list">
             <li class="downloads__item">
@@ -61,12 +67,16 @@
             </li>
           </ul>
         </div>
-        <p class="downloads__decscription"> Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <div class="downloads__decscription">
+        <p> Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
       </div>
       </section>
 
       <section class="advantages">
+        <div class="advantages__slogan">
         <h2 class="advantages__title">Устали от серости мегаполиса? Нам есть, что вам предложить!</h2>
+        </div>
           <div class="advantages__wrapper">
             <ul class="advantages__list">
               <li class="advantages__item">
@@ -88,8 +98,60 @@
             </ul>
           </div>
           <div class="advantages__example">
-            <img src="img/iphone_screen-3.png">
+            <img src="img/iphone-screen-mobile@1x.png">
           </div>
+      </section>
+
+      <section class="reviews">
+        <div class="reviews__list">
+          <blockquote class="reviews__item">
+            <cite class="reviews__author">Николай Петров</cite>
+            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </blockquote>
+          <button class="slider__toggle slider__toggle--current" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </div>
+      </section>
+
+       <section class="price">
+        <div class="price__slider">
+          <table class="price__table table-price">
+            <th class="table-price__header table-price__header--hit">
+              <span class="table-price__name">Стандарт</span>
+              <span class="table-price__cost">3,99 USD</span>
+            </th>
+            <tr class="table-price__row">
+              <td class="table-price__cell table-price__cell--yes">Розовый фильтр</td>
+            </tr>
+            <tr class="table-price__row">
+              <td class="table-price__cell table-price__cell--yes">Смайлики</td>
+            </tr>
+            <tr class="able-price__row">
+              <td class="table-price__cell table-price__cell--no">Комментарии</td>
+            </tr>
+          </table>
+        </div>
+        <button class="slider__toggle slider__toggle" type="button">1</button>
+        <button class="slider__toggle" type="button--current">2</button>
+        <button class="slider__toggle" type="button">3</button>
+      </section>
+
+      <section class="contacts">
+          <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
+          <div class="contacts__list">
+            <span class="contacts__item">Звоните:</span>
+            <a class="contacts__list-link" href="tel:+78125556666">+7 (812) 555-66-66</a>
+             <span class="contacts__item">Пишите:</span>
+            <a class="contacts__list-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+             <span class="contacts__item">Приезжайте:</span>
+            <address class="contacts__list-address">ул. Большая Конюшенная, 19/8</address>
+          </div>
+      </section>
+
+      <section class="map">
+        <script type="text/javascript"></script>
+        <div class="map__marker"></div>
       </section>
 
     </main>
