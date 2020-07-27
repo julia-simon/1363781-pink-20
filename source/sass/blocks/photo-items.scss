@@ -1,0 +1,42 @@
+.photo-items__wrapper {
+  margin: 20px;
+  background-color: #F2F2F2;
+}
+
+.photo-items-message {
+  padding: 18px 18px 20px;
+  margin: 0px;
+}
+
+.photo-items__description {
+  margin: 0 0 10px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.photo-items__like-count {
+  margin-left: 15px;
+  color: #d22856;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.photo-items__date {
+  font-weight: 300;
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.photo-items__author {
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.photo-items-message--day {
+  margin: 0px 20px 20px 20px;
+  background-color: #F2F2F2;
+}
