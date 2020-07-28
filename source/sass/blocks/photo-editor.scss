@@ -1,9 +1,41 @@
-.photo-editor__header {
-  margin: 0;
-  padding: 23px 20px 40px;
-  font-size: 14px;
-  line-height: 30px;
-  font-weight: 400;
+.photo-editor {
+  margin: 0px;
+  width: 320px;
   text-align: center;
-  background: white;
+
+  .photo-editor__header {
+    padding: 23px 20px 40px;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    text-align: center;
+    background: white;
+  }
+
+  .photo-editor__upload-btn {
+    margin: 0 auto 15px;
+    padding: 15px;
+    display: block;
+    width: 280px;
+    color: #d22856;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    border: 3px solid #d22856;
+    border-radius: 50px;
+  }
+
+  .photo-editor__cancel-btn {
+    margin: 0 auto 15px;
+    padding: 15px;
+    display: block;
+    width: 280px;
+    color: #e5e5e5;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    border: 3px solid #e5e5e5;
+    border-radius: 50px;
+  }
 }
+
