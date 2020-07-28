@@ -1,0 +1,26 @@
+// Начните писать стили здесь
+.visually-hidden{
+  display: none;
+}
+
+body{
+  margin: 0;
+}
+
+.page-header{
+  background-color: #293646;
+  margin: 0px;
+  position: relative;
+  }
+  .page-header__logo{
+    position: relative;
+    width: 74px;
+    height: 23px;
+    left: 20px;
+    top: 22px;
+  }
+  .main-nav__toggle{
+    position: absolute;
+    top: 21px;
+    right: 20px;
+  }

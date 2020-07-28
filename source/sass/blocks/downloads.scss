@@ -1,0 +1,39 @@
+.downloads {
+  width: 320px;
+  height: 271px;
+  background-color: #1D2631;
+  color: white;
+  text-align: center;
+
+  .downloads__btn {
+    padding-top: 30px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+}
+
+  .downloads__app {
+    margin-top: 38px;
+}
+
+  .downloads__button {
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.downloads__decscription {
+  margin-top: 38px;
+  margin-top: 38px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  text-align: center;
+  }
+}
