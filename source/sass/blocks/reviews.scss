@@ -1,0 +1,28 @@
+.reviews {
+  width: 320px;
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+
+  .reviews__item {
+    margin: 0;
+    padding: 0 20px;
+  }
+
+  .reviews__author {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  font-style: normal;
+  color: #000;
+  }
+
+  .reviews__text {
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+  }
+}
+
+

@@ -1,0 +1,35 @@
+.contacts {
+  margin: 0px;
+  width: 320px;
+  text-align: center;
+  padding: 20px;
+
+  .contacts__title {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 300;
+    color: #283645;
+  }
+
+  .contacts__item {
+    display: block;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #283645;
+  }
+
+  .contacts__list-link {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 300;
+    color: #d22856;
+  }
+
+  .contacts__list-address {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 300;
+    color: #d22856;
+  }
+}
