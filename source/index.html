@@ -9,7 +9,11 @@
     <header class="page-header">
       <div class="page-header__logo">
       <a>
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg" widht="145" height="40">
+          <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg" widht="145" height="40">
         <img src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип Pink">
+        </picture>
       </a>
     </div>
       <nav class="main-nav">
@@ -38,13 +42,11 @@
     <main class="page-main">
       <h1 class="visually-hidden">Pink - cайт фотоприложения для раскрашивания серых будней</h1>
 
-      <section class="main-header">
-        <div class="main-header__photo">
-          <img class="main-header__photo2" src="img/iphone-hand-desktop@1x.png" height="320">
-        </div>
-      </section>
-
         <section class="downloads">
+        <div class="main-header__photo">
+          <p class="title">Взгляни на жизнь иначе!</p>
+        </div>
+        <div class="download__container">
         <div class="downloads__btn">
           <a class="downloads__button" href="#">Скачать приложение</a>
         </div>
@@ -78,6 +80,7 @@
         <h2 class="advantages__slogan-title"><span>Устали от серости мегаполиса?<br></span><span>Нам есть, что вам предложить!</span></h2>
         </div>
           <div class="advantages__wrapper">
+            <div class="advantages__container-list">
             <ul class="advantages__list">
               <li class="advantages__item">
                 <h3 class="advantages__title">Поднимает настроение</h3>
@@ -100,6 +103,7 @@
           <div class="advantages__example">
             <img src="img/iphone-screen-mobile@1x.png">
           </div>
+        </div>
       </section>
 
       <section class="reviews">

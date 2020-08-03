@@ -1,26 +1,54 @@
-// Начните писать стили здесь
-.visually-hidden{
-  display: none;
-}
 
-body{
-  margin: 0;
-}
-
-.page-header{
+.page-header {
+  display: flex;
+  flex-direction: column;
   background-color: #293646;
+  color: #ffffff;
   margin: 0px;
   position: relative;
   }
-  .page-header__logo{
-    position: relative;
-    width: 74px;
-    height: 23px;
-    left: 20px;
-    top: 22px;
+  .page-header__logo {
+    height: 66px;
+    img {
+      padding: 20px 22px;
+      width: 74px;
+      height: 23px;
+
+    }
   }
-  .main-nav__toggle{
+
+  @media (min-width: 660px) {
+    .page-header__logo {
+      height: 110px;
+    }
+    .page-header__logo img {
+      padding: 27px 130px;
+      width: 145px;
+      height: 40px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .page-header {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+
+.main-nav__toggle{
     position: absolute;
     top: 21px;
     right: 20px;
-  }
+}
+
+.main-nav {
+    margin: 0;
+    ul {
+      margin: 0;
+      li {
+        margin-bottom: 10px;
+      }
+    }
+}
+

@@ -12,3 +12,19 @@
   line-height: 18px;
   color: #283645;
 }
+
+@media (min-width: 660px) {
+  .page-footer__wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-footer__wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
