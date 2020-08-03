@@ -1,5 +1,5 @@
 .reviews {
-  width: 320px;
+  min-width: 320px;
   margin: 0;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -10,18 +10,41 @@
     padding: 0 20px;
   }
 
-  .reviews__author {
+  .reviews__author-nime {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   font-style: normal;
   color: #000;
   }
+}
+
+  .reviews__author-info {
+    display: none;
+  }
 
   .reviews__text {
   font-size: 14px;
   line-height: 30px;
   color: #283645;
+  }
+
+@media (min-width: 660px) {
+
+  .reviews__item {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .reviews__author-info {
+    display: block;
+  }
+
+  .reviews__text {
+    width: 620px;
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0 auto;
   }
 }
 

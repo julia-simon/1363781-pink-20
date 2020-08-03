@@ -162,7 +162,11 @@
           <p class="photo-editor__title">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
         </div>
         <div class="photo-editor__example">
-          <img src="img/photo-road-mobile@1x.jpg">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg">
+            <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg">
+            <img class="photo-item__picture" src="img/photo-road-mobile@1x.jpg">
+          </picture>
         </div>
         <div class="photo-editor__form">
           <div class="photo-editor__filters">

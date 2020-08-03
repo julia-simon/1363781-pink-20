@@ -1,6 +1,6 @@
 .photo-editor {
   margin: 0px;
-  width: 320px;
+  min-width: 320px;
   text-align: center;
 
   .photo-editor__header {
@@ -39,3 +39,9 @@
   }
 }
 
+@media (min-width: 660px) {
+  .photo-editor__title {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

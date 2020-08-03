@@ -72,7 +72,22 @@
     background-color: #F2F2F2;
   }
 
-  @media (min-width: 660px) {
+@media (min-width: 660px) {
+  .advantages__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .advantages__container-list {
+    order: 2;
+  }
+}
+
+  @media (min-width: 1200px) {
+  .advantages__wrapper {
+      display: flex;
+      flex-direction: column;
+    }
   .advantages__container-list {
     order: 2;
   }
