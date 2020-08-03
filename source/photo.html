@@ -6,10 +6,14 @@
     <link type="text/css" rel="stylesheet" href="css/style.css"/>
   </head>
   <body class="page__body">
-    <header class="page-header">
+     <header class="page-header">
       <div class="page-header__logo">
       <a>
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg" widht="145" height="40">
+          <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg" widht="145" height="40">
         <img src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип Pink">
+        </picture>
       </a>
     </div>
       <nav class="main-nav">
@@ -44,8 +48,12 @@
         <p class="galery__description">Взгляните на фотографии, которые выкладывают пользователи!<br> Видите, как не хватает ваших?</p>
         <article class="photo-items photo-items--day">
         <div class="photo-day__wrapper">
-          <span class="photo-items__text">Панорама дня</span>
-          <img class="galery__photo-day" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фото дня">
+          <!--<span class="photo-items__text">Панорама дня</span>-->
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg">
+            <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg">
+            <img class="photo-item__picture" src="img/panorama-mobile@1x.jpg" width="" height="" alt="Фотография 2">
+          </picture>
           <div class="photo-items-message photo-items-message--day">
           <span class="photo-items__author">Анна</span>
           <time datetime="2020-07-18T09:00" class="photo-items__date">5 минут назад</time>
@@ -58,7 +66,11 @@
 
         <article class="photo-items">
         <div class="photo-items__wrapper">
-            <img class="photo-item__picture" src="img/photo-car-mobile@1x.jpg" width="" height="" alt="Фотография 1">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg">
+              <img class="photo-item__picture" src="img/photo-car-mobile@1x.jpg" width="" height="" alt="Фотография 2">
+            </picture>
             <div class="photo-items-message">
             <span class="photo-items__author">Левон</span>
             <time datetime="2020-07-18T09:00" class="photo-items__date">5 часов назад</time>
@@ -69,7 +81,11 @@
           </div>
 
           <div class="photo-items__wrapper">
-            <img class="photo-item__picture" src="img/photo-drumset-mobile@1x.jpg" width="" height="" alt="Фотография 2">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg">
+              <img class="photo-item__picture" src="img/photo-drumset-mobile@1x.jpg" width="" height="" alt="Фотография 3">
+            </picture>
             <div class="photo-items-message">
             <span class="photo-items__author">Антон</span>
             <time datetime="2020-07-18T09:00" class="photo-items__date">12 часов назад</time>
@@ -80,7 +96,11 @@
           </div>
 
           <div class="photo-items__wrapper">
-            <img class="photo-item__picture" src="img/photo-window-mobile@1x.jpg" width="" height="" alt="Фотография 3">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg">
+              <img class="photo-item__picture" src="img/photo-window-mobile@1x.jpg" width="" height="" alt="Фотография 2">
+            </picture>
             <div class="photo-items-message">
             <span class="photo-items__author">Борис</span>
             <time datetime="2020-07-18T09:00" class="photo-items__date">20 часов назад</time>
@@ -91,7 +111,11 @@
           </div>
 
           <div class="photo-items__wrapper">
-            <img class="photo-item__picture" src="img/photo-fair-mobile@1x.jpg" width="" height="" alt="Фотография 4">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg">
+              <img class="photo-item__picture" src="img/photo-fair-mobile@1x.jpg" width="" height="" alt="Фотография 2">
+            </picture>
             <div class="photo-items-message">
             <span class="photo-items__author">Сергей</span>
             <time datetime="2020-07-18T09:00" class="photo-items__date">25 часов назад</time>
@@ -102,7 +126,11 @@
           </div>
 
           <div class="photo-items__wrapper">
-            <img class="photo-item__picture" src="img/photo-pov-mobile@1x.jpg" width="" height="" alt="Фотография 5">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg">
+              <img class="photo-item__picture" src="img/photo-drumset-mobile@1x.jpg" width="" height="" alt="Фотография 2">
+            </picture>
             <div class="photo-items-message">
             <span class="photo-items__author">Максим</span>
             <time datetime="2020-07-18T09:00" class="photo-items__date">40 часов назад</time>
@@ -113,7 +141,11 @@
           </div>
 
           <div class="photo-items__wrapper">
-            <img class="photo-item__picture" src="img/photo-wing-mobile@1x.jpg" width="" height="" alt="Фотография 6">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg">
+              <img class="photo-item__picture" src="img/photo-wing-mobile@1x.jpg" width="" height="" alt="Фотография 2">
+            </picture>
             <div class="photo-items-message">
             <span class="photo-items__author">Надежда</span>
             <time datetime="2020-07-18T09:00" class="photo-items__date">45 часов назад</time>
@@ -156,11 +188,12 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
       <div class="page-footer__logo">
-        <img src="img/logo-pink-blue-mobile.svg" width="147" height="40" </div>
+        <img src="img/logo-pink-blue-mobile.svg" width="147" height="40">
+      </div>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--tweeter" href="#">
+              <a class="social__link social__link--tweeter" href="#"></a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--facebook" href="#"></a>

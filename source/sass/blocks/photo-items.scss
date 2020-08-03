@@ -1,7 +1,29 @@
 .photo-items__wrapper {
+  display: inline-block;
+  width: 280px;
   margin: 20px;
   background-color: #F2F2F2;
 }
+
+@media (min-width: 660px) {
+  .photo-items {
+    width: 660px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .photo-items {
+   width: 940px;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .photo-items--day {
+    display: block;
+  }
+}
+
 
 .photo-items-message {
   padding: 18px 18px 20px;
@@ -12,6 +34,14 @@
   margin: 0 0 10px;
   font-size: 14px;
   line-height: 24px;
+}
+
+@media (min-width: 660px) and (min-width: 1200px) {
+  .galery__description {
+  margin: 40px;
+  font-size: 18px;
+  line-height: 30px;
+  }
 }
 
 .photo-items__like-count {
