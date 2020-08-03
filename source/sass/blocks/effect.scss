@@ -1,0 +1,39 @@
+.effect {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .effect {
+    display: block;
+  }
+  .effect__wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+  .effect__image {
+    padding: 20px;
+  }
+
+  .effect__img-text {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 120px;
+    line-height: 163px;
+    color: #D22856;
+  }
+
+  .effect__text {
+    width: 310px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .effect__text {
+    width: 534px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
