@@ -10,9 +10,14 @@
     display: flex;
     justify-content: center;
     margin: 20px;
+
+    @media (min-width: 1200px) {
+      margin-top: 0;
+      padding: 50px;
+    }
   }
   .effect__image {
-    padding: 20px;
+    padding: 50px 100px 20px 50px;
   }
 
   .effect__img-text {
@@ -31,8 +36,22 @@
 }
 
 @media (min-width: 1200px) {
+   .effect {
+    background-color: #F2F2F2
+   }
+
   .effect__text {
     width: 534px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.effect__link {
+  text-decoration-line: underline;
+  color: #D22856;
+
+  @media (min-width: 1200px) {
     font-size: 18px;
     line-height: 30px;
   }

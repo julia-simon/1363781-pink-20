@@ -5,9 +5,10 @@
   position: relative;
 
   .page-header__logo {
-    width: 74px;
+    width: 100%;
     height: 23px;
     padding-left: 20px;
     padding-top: 22px;
+    position: absolute;
   }
 }
