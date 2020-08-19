@@ -6,22 +6,22 @@
     <link type="text/css" rel="stylesheet" href="css/style.css"/>
   </head>
   <body class="page__body">
-    <header class="page-header">
+    <header class="page-header page-header--main page-header--nojs">
       <div class="page-header__logo">
-      <a>
         <picture>
           <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg" widht="145" height="40">
           <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg" widht="145" height="40">
         <img src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип Pink">
         </picture>
-      </a>
-    </div>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Закрыть меню</span>
-        </button></button>
+      </div>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <div class="main-nav__toggle-wrapper">
+          <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        </div>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__item">
+          <ul class="main-nav__list site-list">
             <li class="main-nav__item main-nav__item--active">
               <a>Главная</a>
             </li>
@@ -37,71 +37,70 @@
           </ul>
         </div>
       </nav>
-    </header>
-
-    <main class="page-main">
-      <h1 class="visually-hidden">Pink - cайт фотоприложения для раскрашивания серых будней</h1>
-
-        <section class="downloads">
-        <div class="main-header__photo">
-          <p class="title">Взгляни на жизнь иначе!</p>
-        </div>
-        <div class="download__container">
-        <div class="downloads__btn">
-          <a class="downloads__button" href="#">Скачать приложение</a>
-        </div>
-        <div class="downloads__app">
-          <ul class="downloads__list">
-            <li class="downloads__item">
-              <a class="downloads__link downloads__link--apple" href="#">
-                <img src="img/Apple" width="47" height="56" alt="Приложение для iOS">
-              </a>
+      <div class="title">
+        <p class="title__slogan">Взгляните на жизнь иначе!</p>
+      </div>
+    <div class="downloads">
+      <div class="download__container">
+      <div class="downloads__btn">
+        <a class="downloads__button" href="#">Скачать приложение</a>
+      </div>
+      <div class="downloads__app">
+        <ul class="downloads__list">
+          <li class="downloads__item">
+            <a class="downloads__link downloads__link--apple" href="#">
+            <img src="img/logo-apple.svg" width="47" height="56" alt="Приложение для iOS">
+            </a>
             </li>
-            <li class="downloads__item">
-              <a class="downloads__link downloads__link--android" href="#">
-                <img src="img/Android" width="43" height="46" alt="Приложение для Android">
-              </a>
-            </li>
-            <li class="downloads__item">
-              <a class="downloads__link downloads__link--windows" href="#">
-                <img src="img/Windows" width="46" height="46" alt="Приложение для Windows">
-              </a>
-            </li>
-          </ul>
+          <li class="downloads__item">
+            <a class="downloads__link downloads__link--android" href="#">
+            <img src="img/logo-android.svg" width="43" height="46" alt="Приложение для Android">
+            </a>
+          </li>
+          <li class="downloads__item">
+            <a class="downloads__link downloads__link--windows" href="#">
+              <img src="img/logo-microsoft.svg" width="46" height="46" alt="Приложение для Windows">
+            </a>
+          </li>
+        </ul>
         </div>
         <div class="downloads__decscription">
         <p> Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
-      </div>
-      </section>
+    </header>
 
+  <main class="page-main">
+      <h1 class="visually-hidden">Pink - cайт фотоприложения для раскрашивания серых будней</h1>
       <section class="advantages">
         <div class="advantages__slogan">
-        <h2 class="advantages__slogan-title"><span>Устали от серости мегаполиса?<br></span><span>Нам есть, что вам предложить!</span></h2>
+        <h2 class="advantages__slogan-title"><span>Устали от серости мегаполиса?</span><span>Нам есть, что вам <br> предложить!</span></h2>
         </div>
           <div class="advantages__wrapper">
             <div class="advantages__container-list">
             <ul class="advantages__list">
-              <li class="advantages__item">
+              <li class="advantages__item advantages__item--mood">
                 <h3 class="advantages__title">Поднимает настроение</h3>
                 <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
               </li>
             </ul>
             <ul class="advantages__list">
-              <li class="advantages__item">
+              <li class="advantages__item advantages__item--world">
                 <h3 class="advantages__title">Меняет мир вокруг</h3>
                 <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
               </li>
             </ul>
             <ul class="advantages__list">
-              <li class="advantages__item">
+              <li class="advantages__item advantages__item--friend">
                 <h3 class="advantages__title">Заводит новых друзей</h3>
                 <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
               </li>
             </ul>
           </div>
           <div class="advantages__example">
+            <picture>
+            <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png">
             <img src="img/iphone-screen-mobile@1x.png">
+            </picture>
           </div>
         </div>
       </section>
@@ -112,7 +111,7 @@
             <span class="effect__img-text">24</span>
           </div>
           <div class="effect__description">
-            <h2 class="effect__title">Эффект на 24 часа!</h2>
+            <h2 class="effect__title">Эффект <br> на 24 часа!</h2>
             <p class="effect__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
             <a class="effect__link" href="#">Узнать больше об исследовании</a>
           </div>
@@ -128,9 +127,11 @@
           </div>
             <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </blockquote>
-          <button class="slider__toggle slider__toggle--current" type="button">1</button>
-          <button class="slider__toggle" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
+          <div class="toggle toggle--review">
+            <button class="toggle__item toggle__item--active" type="button"></button>
+            <button class="toggle__item" type="button"></button>
+            <button class="toggle__item" type="button"></button>
+          </div>
         </div>
       </section>
 
@@ -181,6 +182,50 @@
     </main>
 
     <footer class="page-footer">
+      <div class="page-footer__container">
+        <div class="page-footer__logo">
+          <a href="#">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+              <img src="img/logo-pink-blue-mobile.svg" alt="logo Pink" width="147" height="40">
+            </picture>
+          </a>
+        </div>
+        <ul class="social-list">
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--twitter" href="#" title="Twitter">
+              <svg width="17.5" height="14.663">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--facebook" href="#" title="Facebook">
+              <svg width="8.673" height="18.944">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--youtube" href="#" title="Youtube">
+              <svg width="14.64" height="13.96">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <div class="copyright">
+          <span>Разработано</span>
+          <a class="copyright__link" href="https://htmlacademy.ru/" title="HTML Academy">
+            <svg width="26.943" height="34.09">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-htmlacademy"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!--<footer class="page-footer">
       <div class="page-footer__wrapper">
       <div class="page-footer__logo">
         <img src="img/logo-pink-blue-mobile.svg" width="147" height="40">
@@ -201,10 +246,27 @@
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано:</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img src="img/logo-academy">
+            <img src="img/logo-htmlacademy.svg">
           </a>
         </div>
       </div>
-    </footer>
+    </footer>-->
+
+<script>
+  var navMain = document.querySelector('.main-nav');
+  var navToggle = document.querySelector('.main-nav__toggle');
+
+  navMain.classList.remove('main-nav--nojs');
+
+  navToggle.addEventListener('click', function() {
+    if (navMain.classList.contains('main-nav--closed')) {
+      navMain.classList.remove('main-nav--closed');
+      navMain.classList.add('main-nav--opened');
+    } else {
+      navMain.classList.add('main-nav--closed');
+      navMain.classList.remove('main-nav--opened');
+    }
+  });
+</script>
   </body>
 </html>
