@@ -45,70 +45,59 @@
 
     <main>
       <section class="form">
-          <h2 class="form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</h2>
-          <div class="form__container">
-          <form class="form__competition" action="https://echo.htmlacademy.ru/courses" method="get"></form>
+        <div class="form__container">
+          <h2 class="form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span>Пожалуйста, заполните форму ниже:</span></h2>
 
-          <div class="form__user">
-            <fieldset class="form__group form__group-user">
+          <form class="form__group-wrapper" action="#" novalidate>
+            <fieldset class="form__group form__group--name">
+              <div class="form__group-field">
+                <label class="form__label" for="surname">Фамилия: </label>
+                <input class="form__field" type="text" id="surname" name="surname" placeholder="Укажите фамилию *" required>
+              </div>
 
-            <div class="form__group-field--user">
-              <label class="form__label" for="surname">Фамилия: </label>
-              <input class="form__field form__field--user" type="text" id="surname" name="surname" placeholder="Укажите фамилию *">
-            </div>
+              <div class="form__group-field">
+                <label class="form__label" for="name">Имя: </label>
+                <input class="form__field" type="text" id="name" name="name" placeholder="Введите ваше имя *" required>
+              </div>
 
-            <div class="form__group-field--user">
-              <label class="form__label" for="name">Имя: </label>
-              <input class="form__field form__field--user" type="text" id="name" name="name" placeholder="Введите ваше имя *">
-            </div>
+              <div class="form__group-field">
+                <label class="form__label" for="patronymic">Отчество: </label>
+                <input class="form__field" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
+              </div>
+            </fieldset>
 
-            <div class="form__group-field--user">
-              <label class="form__label" for="patronymic">Отчество: </label>
-              <input class="form__field form__field--user" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
-            </div>
-
-          </fieldset>
-          </div>
-
-            <div class="form__progress">
-              <fieldset class="form__group form__group--progress">
-              <legend class="form__progress-title">Ваши безбашенные достижения в путешествии</legend>
-                <div class="form__group-field form__group-field--progress">
-                  <input class="form__field form__field--checkbox" type="checkbox" name="achievements" id="achievements-1" checked>
+            <fieldset class="form__group form__group--selectable form__group--checkbox">
+              <legend class="form__group-title">Ваши безбашенные достижения в путешествии</legend>
+              <ul class="form__group-list form__group-list--checkbox">
+                <li class="form__group-field form__group-field--selectable form__group-field--checkbox">
+                  <input class="form__field form__field--checkbox" type="checkbox" name="achievements" id="achievements-1" checked="">
                   <label class="form__label form__label--selectable" for="achievements-1">Сделал селфи с акулой</label>
-                </div>
-
-                <div class="form__group-field form__group-field--progress">
-                  <input class="form__field form__field--checkbox" type="checkbox" name="achievements" id="achievements-2" checked>
+                </li>
+                <li class="form__group-field form__group-field--selectable form__group-field--checkbox">
+                  <input class="form__field form__field--checkbox" type="checkbox" name="achievements" id="achievements-2" checked="">
                   <label class="form__label form__label--selectable" for="achievements-2">Обгорел на пляже</label>
-                </div>
-
-                <div class="form__group-field form__group-field--progress">
+                </li>
+                <li class="form__group-field form__group-field--selectable form__group-field--checkbox">
                   <input class="form__field form__field--checkbox" type="checkbox" name="achievements" id="achievements-3">
                   <label class="form__label form__label--selectable" for="achievements-3">Видел Чака Норриса</label>
-                </div>
-
-                <div class="form__group-field form__group-field--progress">
-                  <input class="form__field form__field--checkbox" type="checkbox" name="achievements" id="achievements-3">
+                </li>
+                <li class="form__group-field form__group-field--selectable form__group-field--checkbox">
+                  <input class="form__field form__field--checkbox" type="checkbox" name="achievements" id="achievements-4">
                   <label class="form__label form__label--selectable" for="achievements-4">Накупил сувениров</label>
-                </div>
-
-                <div class="form__group-field form__group-field--progress">
-                  <input class="form__field form__field--checkbox" type="checkbox" name="achievements" id="achievements-5" checked>
+                </li>
+                <li class="form__group-field form__group-field--selectable form__group-field--checkbox">
+                  <input class="form__field form__field--checkbox" type="checkbox" name="achievements" id="achievements-5" checked="">
                   <label class="form__label form__label--selectable" for="achievements-5">Удержал башню</label>
-                </div>
-
-                <div class="form__group-field form__group-field--progress">
+                </li>
+                <li class="form__group-field form__group-field--selectable form__group-field--checkbox">
                   <input class="form__field form__field--checkbox" type="checkbox" name="achievements" id="achievements-6">
                   <label class="form__label form__label--selectable" for="achievements-6">Разгромил отель</label>
-                </div>
-
+                </li>
+              </ul>
             </fieldset>
-            </div>
 
-            <div class="form__contacts">
             <fieldset class="form__group form__group--contacts">
-              <legend class="form__group-title form__group-title--contacts visually-hidden">Контактная информация</legend>
+              <legend class="form__group-title form__group-title--contacts">Контактная информация</legend>
               <div class="form__contacts-wrapper">
                 <div class="form__group-field form__group-field--contact">
                   <label class="form__label form__label--contact" for="phone">Номер телефона </label>
@@ -117,46 +106,52 @@
 
                 <div class="form__group-field form__group-field--contact">
                   <label class="form__label form__label--contact" for="mail">Адрес почты </label>
-                  <input class="form__field form__field--contact" type="email" name="mail" id="mail" placeholder="Введите почту *">
+                  <input class="form__field form__field--contact" type="email" name="mail" id="mail" placeholder="Введите почту *" required>
                 </div>
               </div>
             </fieldset>
-            </div>
 
-            <div class="form__apps">
-            <fieldset class="form__group form__group--apps">
+            <fieldset class="form__group form__group--selectable form__group--radio">
               <legend class="form__group-title">С каким приложением путешествовали?</legend>
-
-                <div class="form__group-field form__group-field--selectable form__group-field--radio">
-                  <input class="form__field form__field--radio" type="radio" name="app-choice" id="ios" checked>
+              <ul class="form__group-list">
+                <li class="form__group-field form__group-field--selectable form__group-field--radio">
+                  <input class="form__field form__field--radio" type="radio" name="app-choice" id="ios" checked="">
                   <label class="form__label form__label--selectable" for="ios">Pink для iOS</label>
-                </div>
-                <div class="form__group-field form__group-field--selectable form__group-field--radio">
+                </li>
+                <li class="form__group-field form__group-field--selectable form__group-field--radio">
                   <input class="form__field form__field--radio" type="radio" name="app-choice" id="android">
                   <label class="form__label form__label--selectable" for="android">Pink на Android</label>
-                </div>
-                <div class="form__group-field form__group-field--selectable form__group-field--radio">
+                </li>
+                <li class="form__group-field form__group-field--selectable form__group-field--radio">
                   <input class="form__field form__field--radio" type="radio" name="app-choice" id="ms">
                   <label class="form__label form__label--selectable" for="ms">Windows Phone</label>
-                </div>
+                </li>
+              </ul>
             </fieldset>
-            </div>
 
-            <div class="form__comments">
             <fieldset class="form__group form__group--textarea">
               <legend class="form__group-title">Опишите свои эмоции</legend>
               <div class="form__group-field form__group-field--textarea">
                 <textarea class="form__field form__field--textarea" name="emotions" id="emotions" cols="24" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
               </div>
             </fieldset>
-          </div>
 
             <div class="form__group form__group--button">
               <button class="btn btn--form" type="submit">Отправить форму</button>
-              <div class="form__info">Обязательные поля</div>
+              <span class="form__legend"><b>*</b> — Обязательные <i>для заполнения </i>поля</span>
             </div>
+
+            <div class="form__pop-up form__pop-up--error visually-hidden">
+              <p class="form__pop-up-headline">Что-то пошло не так!</p>
+              <p class="form__pop-up-text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+              <div class="form__group form__group--button">
+              <button class="btn btn--form" type="submit">Ok</button>
+            </div>
+
+            <div class="form-ok visually-hidden">Все верно
+            </div>
+
           </form>
-        </div>
       </section>
     </main>
 
@@ -219,6 +214,43 @@
       navMain.classList.remove('main-nav--opened');
     }
   });
+
+  var form  = document.getElementsByTagName('form')[0];
+  var email = document.getElementById('mail');
+  var surname = document.getElementById('surname');
+  var first_name = document.getElementById('name');
+  var error = document.querySelector('.form__pop-up--error');
+  var ok = document.querySelector('.ok');
+
+
+
+  form.addEventListener("submit", function (event) {
+    // Каждый раз, когда пользователь пытается отправить данные, мы проверяем
+     // валидность поля электронной почты.
+    if (!email.validity.valid || !first_name.validity.valid || !surname.validity.valid) {
+
+      // Если поле невалидно, отображается пользовательское
+      // сообщение об ошибке.
+      error.className = "form__pop-up--error";
+      ok.className = "ok visually-hidden";
+      // И мы предотвращаем отправку формы путем отмены события
+      event.preventDefault();
+    }
+  }, false);
+
+  form.addEventListener("submit", function (event) {
+    // Каждый раз, когда пользователь пытается отправить данные, мы проверяем
+     // валидность поля электронной почты.
+    if (email.validity.valid && first_name.validity.valid && surname.validity.valid) {
+
+      // Если поле невалидно, отображается пользовательское
+      // сообщение об ошибке.
+      error.className = "form__pop-up--error visually-hidden";
+      ok.className = "ok";
+
+    }
+  }, false);
+
 </script>
 
   </body>
