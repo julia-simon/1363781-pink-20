@@ -98,12 +98,12 @@
       text-align: left;
     }
 
-     @media (min-width: 1200px) {
+    @media (min-width: 1200px) {
       font-size: 30px;
       line-height: 30px;
       text-align: center;
       margin-top: 0;
-     }
+    }
   }
 
   .advantages__wrapper {
@@ -143,9 +143,9 @@
   }
 
 @media (min-width: 1200px) {
- .advantages__example {
-  display: none;
- }
+  .advantages__example {
+    display: none;
+  }
 }
 
 @media (min-width: 660px) {
