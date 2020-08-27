@@ -34,14 +34,14 @@
 .photo-items-message {
   padding: 18px 18px 20px;
   margin: 0px;
- }
+}
 
 .photo-items__description {
   margin: 0 0 10px;
   font-size: 14px;
   line-height: 24px;
 
-  @media (min-width: 660px) and (min-width: 1200px) {
+  @media (min-width: 660px) {
     height: 48px;
   }
 }
@@ -87,7 +87,7 @@
   }
 
   @media (min-width: 1200px) {
-     width: 901px;
+    width: 901px;
   }
 }
 
@@ -95,4 +95,24 @@
   img {
     width: 100%
   }
+}
+
+.photo-items__like-button {
+  display: inline-block;
+  width: 13px;
+  height: 12px;
+  vertical-align: middle;
+  background: url(../img/icon-heart.svg) no-repeat center;
+  cursor: pointer;
+  border: none;
+}
+
+.form-photo__filter-button {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  vertical-align: middle;
+  background: url(../img/icon-editor-crop.svg) no-repeat center;
+  cursor: pointer;
+  border: none;
 }

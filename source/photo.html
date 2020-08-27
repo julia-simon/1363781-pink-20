@@ -5,7 +5,7 @@
     <title>HTML Academy: Пинк</title>
     <link type="text/css" rel="stylesheet" href="css/style.css"/>
   </head>
-   <header class="page-header page-hader--inner page-header--nojs">
+  <header class="page-header page-hader--inner page-header--nojs">
       <div class="page-header__logo">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg" widht="145" height="40">
@@ -57,8 +57,10 @@
           <span class="photo-items__author">Анна</span>
           <time datetime="2020-07-18T09:00" class="photo-items__date">5 минут назад</time>
           <p class="photo-items__description">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+          <div class="photo-items__like">
           <button class="photo-items__like-button" type="button"></button>
           <span class="photo-items__like-count">Нравится: 215</span>
+          </div>
           </div>
         </div>
         </article>
@@ -74,10 +76,12 @@
             <span class="photo-items__author">Левон</span>
             <time datetime="2020-07-18T09:00" class="photo-items__date">5 часов назад</time>
             <p class="photo-items__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <div class="photo-items__like">
             <button class="photo-items__like-button" type="button"></button>
             <span class="photo-items__like-count">Нравится: 356</span>
             </div>
-          </div>
+            </div>
+        </div>
 
           <div class="photo-items__wrapper">
             <picture>
@@ -89,9 +93,11 @@
             <span class="photo-items__author">Антон</span>
             <time datetime="2020-07-18T09:00" class="photo-items__date">12 часов назад</time>
             <p class="photo-items__description">Соседи будут рады!</p>
+            <div class="photo-items__like">
             <button class="photo-items__like-button" type="button"></button>
             <span class="photo-items__like-count">Нравится: 666</span>
-          </div>
+            </div>
+            </div>
           </div>
 
           <div class="photo-items__wrapper">
@@ -104,9 +110,11 @@
             <span class="photo-items__author">Борис</span>
             <time datetime="2020-07-18T09:00" class="photo-items__date">20 часов назад</time>
             <p class="photo-items__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <div class="photo-items__like">
             <button class="photo-items__like-button" type="button"></button>
             <span class="photo-items__like-count">Нравится: 215</span>
-          </div>
+            </div>
+            </div>
           </div>
 
           <div class="photo-items__wrapper">
@@ -119,9 +127,11 @@
             <span class="photo-items__author">Сергей</span>
             <time datetime="2020-07-18T09:00" class="photo-items__date">25 часов назад</time>
             <p class="photo-items__description">Самая кубанская в миру!</p>
+            <div class="photo-items__like">
             <button class="photo-items__like-button" type="button"></button>
             <span class="photo-items__like-count">Нравится: 4</span>
-          </div>
+            </div>
+            </div>
           </div>
 
           <div class="photo-items__wrapper">
@@ -134,9 +144,11 @@
             <span class="photo-items__author">Максим</span>
             <time datetime="2020-07-18T09:00" class="photo-items__date">40 часов назад</time>
             <p class="photo-items__description">Где снег-то?</p>
+            <div class="photo-items__like">
             <button class="photo-items__like-button" type="button"></button>
             <span class="photo-items__like-count">Нравится: 150</span>
-          </div>
+            </div>
+            </div>
           </div>
 
           <div class="photo-items__wrapper">
@@ -149,9 +161,11 @@
             <span class="photo-items__author">Надежда</span>
             <time datetime="2020-07-18T09:00" class="photo-items__date">45 часов назад</time>
             <p class="photo-items__description">Всем GM и взаимные лайки</p>
+            <div class="photo-items__like">
             <button class="photo-items__like-button" type="button"></button>
             <span class="photo-items__like-count">Нравится: 2560</span>
-          </div>
+            </div>
+            </div>
           </div>
       </section>
 
@@ -160,6 +174,7 @@
           <h2 class="visually-hidden">Добавить новую фотографию</h2>
           <p class="photo-editor__title">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
         </div>
+        <div class="photo-editor__container">
         <div class="photo-editor__example">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg">
@@ -167,23 +182,30 @@
             <img class="photo-item__picture" src="img/photo-road-mobile@1x.jpg">
           </picture>
         </div>
+
         <div class="photo-editor__form">
           <div class="photo-editor__filters">
-            <div class="photo-editor__filters-buttons">
-            <button class="filters-button" type="button">
-            </button>
-            <button class="filter-button" type="button">
-            </button>
-            <button class="filter-button" type="button">
-            </button>
+            <button class="form-photo__filter-button form-photo__filter-button--current" type="button" aria-label="Обрезка"></button>
+            <div class="photo-editor__range photo-editor__range--active">
+            <input class="form-photo__filter-range" type="range" min="1" max="100">
             </div>
+
+            <button class="form-photo__filter-button" type="button" aria-label="Заливка"></button>
             <div class="photo-editor__range">
-              <input class="form-photo__filter-range" type="range" min="1" max="100">
+            <input class="form-photo__filter-range" type="range" min="1" max="100">
             </div>
-            <div class="photo-editor__btns">
-              <button class="photo-editor__upload-btn" type="submit">Запостить</button>
-              <button class="photo-editor__cancel-btn" type="reset">Отмена</button>
-            </div>
+
+            <button class="form-photo__filter-button" type="button" aria-label="Контрастность"></button>
+          <div class="photo-editor__range">
+            <input class="form-photo__filter-range" type="range" min="1" max="100">
+          </div>
+        </div>
+
+          <div class="photo-editor__btns">
+            <button class="photo-editor__upload-btn" type="submit">Запостить</button>
+            <button class="photo-editor__cancel-btn" type="reset">Отмена</button>
+          </div>
+          </div>
       </section>
 
     </main>

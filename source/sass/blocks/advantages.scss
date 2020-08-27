@@ -6,7 +6,6 @@
 
 .advantages__slogan {
   min-width: 280px;
-  height: 170px;
   margin: auto;
 
     span {
@@ -99,17 +98,17 @@
       text-align: left;
     }
 
-     @media (min-width: 1200px) {
+    @media (min-width: 1200px) {
       font-size: 30px;
       line-height: 30px;
       text-align: center;
       margin-top: 0;
-     }
+    }
   }
 
   .advantages__wrapper {
     /*background-color: #F2F2F2;*/
-    padding-top: 70px;
+    padding-top: 40px;
     background: #f2f2f2 url(../img/bg-triangle-white.svg) no-repeat top center;
     background-size: 100%;
   }
@@ -144,9 +143,9 @@
   }
 
 @media (min-width: 1200px) {
- .advantages__example {
-  display: none;
- }
+  .advantages__example {
+    display: none;
+  }
 }
 
 @media (min-width: 660px) {

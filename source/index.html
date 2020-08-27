@@ -37,7 +37,7 @@
           </ul>
         </div>
       </nav>
-      <div class="title">
+      <div class="title title--main">
         <p class="title__slogan">Взгляните на жизнь иначе!</p>
       </div>
     <div class="downloads">
@@ -138,45 +138,106 @@
       <section class="price">
         <div class="price__slider">
           <table class="price__table table-price">
-            <th class="table-price__header table-price__header--hit">
-              <span class="table-price__name">Стандарт</span>
-              <span class="table-price__cost">3,99 USD</span>
-            </th>
-            <tr class="table-price__row">
-              <td class="table-price__cell table-price__cell--yes">Розовый фильтр</td>
+            <tbody><tr>
+              <th class="price-table__cell">
+                <div class="price-table__cell-inner">
+                  <span class="table-price__name">Скрытая ячейка</span>
+                  <span class="table-price__cost">Скрытая ячейка</span>
+                </div>
+              </th>
+              <th class="price-table__cell">
+                <div class="price-table__cell-inner">
+                  <span class="table-price__name">База</span>
+                  <span class="table-price__cost">1,99 USD</span>
+                </div>
+              </th>
+              <th class="price-table__cell">
+                <div class="table-price__header table-price__header--hit">
+                  <span class="table-price__name">Стандарт</span>
+                  <span class="table-price__cost">3,99 USD</span>
+                </div>
+              </th>
+              <th class="price-table__cell">
+                <div class="price-table__cell-inner">
+                  <span class="table-price__name">Анлим</span>
+                  <span class="table-price__cost">9,99 USD</span>
+                </div>
+              </th>
             </tr>
             <tr class="table-price__row">
-              <td class="table-price__cell table-price__cell--yes">Смайлики</td>
+              <td class="table-price__cell table-price__cell--yes">
+                <span>Розовый фильтр</span>
+              </td>
+              <td class="table-price__cell table-price__cell--yes">
+                <span>Розовый фильтр</span>
+              </td>
+              <td class="table-price__cell table-price__cell--yes">
+                <span>Розовый фильтр</span>
+              </td>
+              <td class="table-price__cell table-price__cell--yes">
+                <span>Розовый фильтр</span>
+              </td>
             </tr>
-            <tr class="able-price__row">
-              <td class="table-price__cell table-price__cell--no">Комментарии</td>
+            <tr class="table-price__row">
+              <td class="table-price__cell table-price__cell--no">
+                <span>Смайлики</span>
+              </td>
+              <td class="table-price__cell table-price__cell--no">
+                <span>Смайлики</span>
+              </td>
+              <td class="table-price__cell table-price__cell--yes">
+                <span>Смайлики</span>
+              </td>
+              <td class="table-price__cell table-price__cell--yes">
+                <span>Смайлики</span>
+              </td>
             </tr>
-          </table>
+            <tr>
+            <tr class="table-price__row">
+              <td class="table-price__cell table-price__cell--no">
+                <span>Комментарии</span>
+              </td>
+              <td class="table-price__cell table-price__cell--no">
+                <span>Комментарии</span>
+              </td>
+              <td class="table-price__cell table-price__cell--no">
+                <span>Комментарии</span>
+              </td>
+              <td class="table-price__cell table-price__cell--yes">
+                <span>Комментарии</span>
+              </td>
+            </tr>
+          </tbody></table>
         </div>
-        <button class="slider__toggle slider__toggle" type="button">1</button>
-        <button class="slider__toggle" type="button--current">2</button>
-        <button class="slider__toggle" type="button">3</button>
+
+        <div class="toggle toggle--table">
+            <button class="toggle__item" type="button"></button>
+            <button class="toggle__item toggle__item--active" type="button"></button>
+            <button class="toggle__item" type="button"></button>
+          </div>
       </section>
 
       <section class="contacts">
-          <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
+          <p class="contacts__title">Остались вопросы?<br> Свяжитесь с нами!</p>
           <div class="contacts__list">
-            <span class="contacts__item">Звоните:</span>
+          <div class="contacts__item contacts__item--tel">
+            <h3>Звоните:</h3>
             <a class="contacts__list-link" href="tel:+78125556666">+7 (812) 555-66-66</a>
-            <span class="contacts__item">Пишите:</span>
+          </div>
+          <div class="contacts__item contacts__item--letter">
+            <h3>Пишите:</h3>
             <a class="contacts__list-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            <span class="contacts__item">Приезжайте:</span>
-            <address class="contacts__list-address">ул. Большая Конюшенная, 19/8</address>
+          </div>
+          <div class="contacts__item contacts__item--adress">
+            <h3>Приезжайте:</h3>
+            <address class="contacts__list-address">ул. Большая <br> Конюшенная, 19/8</address>
+          </div>
           </div>
       </section>
 
       <section class="map">
-        <p>Карта</p>
-        <picture>
-        <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg">
-        <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg">
-        <img src="img/bg-map-mobile@1x.png">
-        </picture>
+
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9f4ac67d0ebfca3b0e3656456041d5ac4650788541379b09db272cce494f2954&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
       </section>
 
     </main>
