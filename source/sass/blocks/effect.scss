@@ -1,46 +1,85 @@
 .effect {
   display: none;
-}
 
-@media (min-width: 660px) {
-  .effect {
+  @media (min-width: 660px) {
     display: block;
   }
-  .effect__wrapper {
+
+  @media (min-width: 1200px) {
+    background-color: #F2F2F2;
+    padding-top: 50px;
+  }
+}
+
+
+.effect__wrapper {
+  @media (min-width: 660px) {
     display: flex;
     justify-content: center;
     margin: 20px;
+    height: 300px;
+    padding-top: 50px;
+  }
 
-    @media (min-width: 1200px) {
-      margin-top: 0;
-      padding: 50px;
+  @media (min-width: 1200px) {
+    margin: 0 20px;
+    padding: 0;
+    height: 429px;
+  }
+}
+
+
+.effect__image {
+  @media (min-width: 660px) {
+    padding: 50px 100px 20px 50px;
+    background: url("../img/icon-timer.svg") no-repeat;
+    background-size: 238px 276px;
+  }
+
+  @media (min-width: 1200px) {
+    background-size: 298px 345px;
+  }
+}
+
+.effect__description {
+  @media (min-width: 1200px) {
+    br {
+      display: none;
     }
   }
-  .effect__image {
-    padding: 50px 100px 20px 50px;
-  }
+}
 
-  .effect__img-text {
+.effect__img-text {
+  @media (min-width: 660px) {
     font-style: normal;
     font-weight: bold;
-    font-size: 120px;
+    font-size: 96px;
     line-height: 163px;
     color: #D22856;
+    border: 15px solid #d22856;
+    border-radius: 50%;
+    padding: 20px 30px;
+    position: relative;
+    left: -30px;
+    top: 23px;
   }
 
-  .effect__text {
+  @media (min-width: 1200px) {
+    font-size: 120px;
+    padding: 30px 40px;
+    left: -25px;
+    top: 65px;
+  }
+}
+
+.effect__text {
+  @media (min-width: 660px) {
     width: 310px;
     font-size: 14px;
     line-height: 24px;
   }
-}
 
-@media (min-width: 1200px) {
-  .effect {
-    background-color: #F2F2F2
-  }
-
-  .effect__text {
+  @media (min-width: 1200px) {
     width: 534px;
     font-size: 18px;
     line-height: 30px;

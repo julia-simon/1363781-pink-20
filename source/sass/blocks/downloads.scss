@@ -4,41 +4,49 @@
   background-color: #1D2631;
   color: white;
   text-align: center;
+}
 
-  .download__container{
+.download__container{
   margin: auto;
   width:280px
-  }
+}
 
-  .downloads__btn {
+.downloads__btn {
     padding-top: 30px;
     text-align: center;
     font-size: 18px;
     line-height: 18px;
     font-weight: 700;
-  }
+}
 
-  .downloads__app {
+.downloads__app {
     margin-top: 38px;
-  }
+}
 
-  .downloads__button {
-    padding: 10px;
-    border: 2px solid white;
-    border-radius: 20px;
+.downloads__button {
+  padding: 10px;
+  border: 3px solid #FFFFFF;
+  border-radius: 30px;
+  box-sizing: border-box;
+
+  &:hover {
+    background: #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 7px rgba(1, 1, 1, 0.75);
   }
 
   a {
-  text-decoration: none;
-  color: white;
+    text-decoration: none;
+    color: white;
   }
+}
 
-  .downloads__decscription {
+.downloads__decscription {
     margin-top: 38px;
     margin-top: 38px;
     font-size: 14px;
     line-height: 24px;
     font-weight: 300;
     text-align: center;
-  }
 }
+

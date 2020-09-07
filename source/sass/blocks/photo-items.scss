@@ -30,19 +30,55 @@
   }
 }
 
+.photo-day__wrapper {
+  position: relative;
+
+  &:after {
+    width: 140px;
+    height: 36px;
+    font-size: 12px;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    background: #d22856;
+    color: #fff;
+    content: 'Панорама дня';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 20px;
+
+    @media (min-width: 660px) {
+      top: 57px;
+    }
+
+    @media (min-width: 1200px) {
+      top: 54px;
+      right: 130px;
+    }
+  }
+}
+
 
 .photo-items-message {
-  padding: 18px 18px 20px;
-  margin: 0px;
+  padding: 13px 18px 20px;
+  margin: 0;
+
+  @media (min-width: 660px) {
+    padding: 25px;
+  }
 }
 
 .photo-items__description {
-  margin: 0 0 10px;
+  margin: 0;
   font-size: 14px;
   line-height: 24px;
+  padding-bottom: 15px;
 
   @media (min-width: 660px) {
     height: 48px;
+    padding-bottom: 23px;
   }
 }
 
@@ -60,6 +96,10 @@
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
+
+  @media (min-width: 660px) {
+    margin-left: 0;
+  }
 }
 
 .photo-items__date {
@@ -78,41 +118,64 @@
 
 .photo-items-message--day {
   width: 241px;
-  margin: 0px auto 40px;
+  margin: -5px auto 40px;
   background-color: #F2F2F2;
+  position: relative;
 
   @media (min-width: 660px) {
     width: 583px;
-    margin: 0 auto 40px;
+
+    .photo-items__like {
+      justify-content: start;
+      position: absolute;
+      top: 25px;
+      right: 30px;
+    }
   }
 
   @media (min-width: 1200px) {
     width: 901px;
+
+    .photo-items__description {
+      height: 100%;
+    }
   }
 }
 
+.photo-editor__filters {
+  width: 280px;
+}
+
 .photo-items--day {
+  display: block;
+  width: 100%;
   img {
     width: 100%
   }
 }
 
+.photo-items__like {
+  @media (min-width: 660px) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+
 .photo-items__like-button {
   display: inline-block;
   width: 13px;
   height: 12px;
+  background: url(../img/icon-heart.svg) no-repeat center center;
   vertical-align: middle;
-  background: url(../img/icon-heart.svg) no-repeat center;
   cursor: pointer;
   border: none;
+
+  @media (min-width: 660px) {
+    margin-left: 16px;
+    padding-left: 0px;
+  }
 }
 
-.form-photo__filter-button {
-  display: inline-block;
-  width: 44px;
-  height: 44px;
-  vertical-align: middle;
-  background: url(../img/icon-editor-crop.svg) no-repeat center;
-  cursor: pointer;
-  border: none;
-}
