@@ -24,7 +24,7 @@ table {
   margin: 0 auto;
   width: calc(300% - 133px);
   border-collapse: collapse;
-  transform: translateX(-80%);
+  transform: translateX(-32%);
 
   @media (min-width: 660px) {
     transform: none;
@@ -87,6 +87,23 @@ table {
     line-height: 30px;
     text-transform: uppercase;
 
+    &--yes {
+      background: url(../img/icon-yes.svg) no-repeat center right 10px;
+      background-size: 31px 21px;
+
+      @media (min-width: 660px) {
+        background-position: center center;
+      }
+    }
+
+    &--no {
+      background: url(../img/icon-no.svg) no-repeat center right 10px;
+
+      @media (min-width: 660px) {
+        background-position: center center;
+      }
+    }
+
     @media (min-width: 660px) {
       width: 25%;
       text-transform: none;
@@ -97,8 +114,11 @@ table {
     }
   }
 }
-.price-table__cell:first-child {
-  display: none;
+.price-table__cell {
+
+  &:first-child {
+    display: none;
+  }
 }
 
 td:first-of-type {
@@ -120,6 +140,10 @@ td:first-of-type {
 
   td:first-child span{
     display: inline;
+  }
+
+  td:first-child {
+    background: none;
   }
 
   th:first-child {
@@ -153,12 +177,29 @@ td:first-of-type {
   background-position: bottom;
   background-size: cover;
 
+  @media (min-resolution: 2dppx) {
+      background-image: url(../img/bg-map-mobile@2x.jpg);
+      background-size: 320px;
+  }
+
   @media (min-width: 660px) {
     height: 374px;
+    background-image: url(../img/bg-map-tablet@1x.jpg);
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/bg-map-tablet@2x.jpg);
+      background-size: 700px;
+    }
   }
 
   @media (min-width: 1200px) {
     height: 502px;
+    background-image: url(../img/bg-map-desktop@1x.jpg);
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/bg-map-desktop@2x.jpg);
+      background-size: 1200px;
+    }
   }
 
   &::before {
@@ -174,3 +215,32 @@ td:first-of-type {
     z-index: 1;
   }
 }
+
+.price-table__cell--hit {
+  background: #283645 url(../img/bg-hit.svg) no-repeat left top;
+
+  @media (min-width: 660px) and (max-width: 1199px) {
+    background: #283645 url(../img/bg-hit-tablet.svg) no-repeat left top;
+  }
+}
+
+.table-price__header--hit {
+  position: relative;
+
+  &::before {
+    content: "Хит";
+    position: absolute;
+    left: -2px;
+    transform: rotate(-45deg);
+    font-size: 14px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: normal;
+
+    @media (min-width: 660px) {
+      left: 7px;
+    }
+  }
+}
+
+

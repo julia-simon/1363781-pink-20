@@ -48,6 +48,10 @@
     margin-bottom: 10px;
   }
 
+  a {
+    text-decoration: none;
+  }
+
   @media (min-width: 660px) {
     display: inline-block;
     padding-top: 18px;
@@ -85,4 +89,17 @@
   font-weight: 300;
   color: #d22856;
   font-style: normal;
+}
+
+.contacts__item--letter {
+  a {
+
+    &:hover {
+      color: #283645;
+    }
+
+    &:active {
+      color: transparentize(#283645,.7);
+    }
+  }
 }
