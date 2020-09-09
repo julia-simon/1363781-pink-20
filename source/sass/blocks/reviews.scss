@@ -34,6 +34,7 @@
   font-weight: 700;
   font-style: normal;
   color: #000;
+  margin-bottom: 0;
   }
 }
 
@@ -56,85 +57,13 @@
 
   .reviews__author-info {
     display: block;
+    margin: 0;
   }
 
   .reviews__text {
     width: 620px;
     font-size: 18px;
     line-height: 30px;
-    margin: 0 auto;
+    margin: 0 auto 40px;
   }
-}
-
-.toggle__item {
-  padding:0;
-  margin:0 8px;
-  display: inline-block;
-  vertical-align: middle;
-  width: 6px;
-  height: 6px;
-  background: transparentize(#283645,.7);
-  border-radius: 20px;
-  cursor: pointer;
-  border: none;
-  outline: none;
-
-  &:hover {
-    background: transparentize(#283645,.4);
-  }
-
-  &:active{
-    background: transparentize(#283645,.9)
-  }
-
-  @media (min-width: 1200px) {
-    display: none;
-  }
-}
-
-.toggle__item--active {
-  width:12px;
-  height:12px;
-  border:3px solid #000;
-  background:#fff
-}
-
-.toggle__arrow {
-  display: none;
-
-  @media (min-width: 1200px) {
-    display: block;
-    padding: 0;
-    position: absolute;
-    top: 25px;
-    width: 22px;
-    height: 41px;
-    cursor: pointer;
-  }
-}
-
-.toggle__arrow {
-  border: none;
-  background: none;
-
-  svg {
-    fill: #283645;
-    opacity: 0.3;
-
-    &:hover {
-      opacity: 0.6
-    }
-
-    &:active {
-      opacity: 0.1;
-    }
-  }
-}
-
-.toggle__arrow--left {
-  left: 0;
-}
-
-.toggle__arrow--right {
-  right: 0;
 }

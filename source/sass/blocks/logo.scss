@@ -1,0 +1,69 @@
+.logo {
+  width: 145px;
+  height: 40px;
+  margin: 5px 0 0 -50px;
+
+
+  @media (min-width: 660px) {
+    margin: 23px 20px;
+  }
+
+  &:hover {
+    .logo__glasses,
+    .logo__glasses-desktop,
+    .logo__pink {
+      fill:#d22856
+    }
+  }
+
+  &:active {
+    .logo__glasses,
+    .logo__glasses-desktop,
+    .logo__pink {
+      fill: #FFFFFF;
+      opacity: 0.3;
+    }
+
+    .logo__star {
+      fill: #D22856;
+      opacity: 0.3;
+    }
+  }
+}
+
+
+.logo__pink {
+  fill: #FFFFFF;
+}
+
+.logo__glasses-desktop {
+  fill: #FFFFFF;
+  display: none;
+
+  @media (min-width: 1200px) {
+    display: block;
+  }
+}
+
+.logo__glasses {
+  fill: #FFFFFF;
+  display: none;
+
+
+  @media (min-width: 660px) {
+    display: block;
+  }
+
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.logo__star {
+  display: none;
+  fill: #D22856;
+
+  @media (min-width: 1200px) {
+    display: block;
+  }
+}

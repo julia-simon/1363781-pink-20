@@ -88,41 +88,41 @@
   padding-bottom: 70px;
 }
 
-  .photo-editor__cancel-btn {
-    margin: 25px auto;
-    padding: 15px;
-    display: block;
-    width: 280px;
-    color: #283645;
-    opacity: 0.1;
-    font-size: 18px;
-    line-height: 18px;
-    font-weight: 700;
-    border: 3px solid #283645;
+.photo-editor__cancel-btn {
+  margin: 25px auto;
+  padding: 15px;
+  display: block;
+  width: 280px;
+  color: #283645;
+  opacity: 0.1;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  border: 3px solid #283645;
     border-radius: 30px;
 
-    &:hover {
-      background:0 0;
-      border-color:3px solid #283645;
-      opacity: 0.3;
-      color:#283645;
-    }
-    &:active{
-      background:#283645;
-      border-color:#283645;
-      opacity: 0.3;
-      color:rgba(255,255,255,.3)
-    }
-
-    @media (min-width: 660px) {
-      width: 260px;
-    }
-
-    @media (min-width: 1200px) {
-      width: 183px;
-      margin: 25px auto;
-    }
+  &:hover {
+    background:0 0;
+    border-color:3px solid #283645;
+    opacity: 0.3;
+    color:#283645;
   }
+  &:active{
+    background:#283645;
+    border-color:#283645;
+    opacity: 0.3;
+    color:rgba(255,255,255,.3)
+  }
+
+  @media (min-width: 660px) {
+    width: 260px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 183px;
+    margin: 25px auto;
+  }
+}
 
 
 @media (min-width: 660px) {
@@ -161,28 +161,6 @@
     opacity: 1;
   }
 }
-
-/*input[type='range']{
-  -webkit-appearance: none;
-  background-color: red;
-  height: 2px;
-  width: 240px;
-}
-
-input[type='range']::-webkit-slider-thumb {
- width: 240px;
-  height: 2px;
-  background-color: #283645;
-
-  @media (min-width: 660px) {
-    width: 202px;
-  }
-
-  @media (min-width: 1200px) {
-    width: 288px;
-  }
-}
-  }*/
 
 input {
   width: 240px;
@@ -258,26 +236,6 @@ input[type='range']::-webkit-slider-thumb {
     background: #D22856;
   }
 }
-
-
-/*range {
-  &::-webkit-slider-runnable-track {
-    border-radius: 10px;
-    height: 10px;
-    border: 1px solid #000;
-    background-color: #ccc;
-  }
-}
-
-.form-photo__filter-range::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  border: 1px solid #000000;
-  height: 36px;
-  width: 16px;
-  border-radius: 3px;
-  background: #ffffff;
-  cursor: pointer;
-}*/
 
 .photo-editor__range {
   display: none;
@@ -415,4 +373,3 @@ input[type='range']::-webkit-slider-thumb {
     opacity: 1;
   }
 }
-
