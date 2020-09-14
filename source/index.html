@@ -6,8 +6,10 @@
     <title>HTML Academy: Пинк</title>
     <link type="text/css" rel="stylesheet" href="css/styles.min.css"/>
   </head>
-  <body class="page__body">
-    <header class="page-header page-header--main page-header--nojs">
+  <body class="page-body">
+    <header class="page-header page-header--main">
+      <div class="page-header__top">
+        <div class="page-header__top-botton">
       <div class="page-header__logo">
         <a href="index.html">
         <svg class="logo" width="146.3" height="40.375" viewBox="0 0 146.3 40.375" role="img" aria-label="Приложение Пинк">
@@ -52,7 +54,7 @@
           </button>
         </div>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
+          <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--active">
               <a>Главная</a>
             </li>
@@ -68,38 +70,43 @@
           </ul>
         </div>
       </nav>
+    </div>
+    </div>
 
-      <div class="title title--main">
-        <p class="title__slogan">Взгляните на жизнь иначе!</p>
-      </div>
-      <div class="downloads">
-        <div class="download__container">
-          <div class="downloads__btn">
-            <a class="downloads__button" href="https://www.apple.com/itunes/">Скачать приложение</a>
+      <div class="page-header__wrapper">
+        <div class="title title--main">
+          <p class="title__slogan">Взгляните на жизнь иначе!</p>
+        </div>
+        <div class="downloads">
+          <div class="downloads__container">
+            <div class="downloads__btn">
+              <a class="downloads__button" href="https://www.apple.com/itunes/">Скачать приложение</a>
+            </div>
+            <div class="downloads__app">
+              <ul class="downloads__list">
+                <li class="downloads__item">
+                  <a class="downloads__link downloads__link--apple" href="https://www.apple.com/itunes/">
+                  <img src="img/logo-apple.svg" width="47" height="56" alt="Приложение для iOS">
+                  </a>
+                </li>
+                <li class="downloads__item">
+                  <a class="downloads__link downloads__link--android" href="https://play.google.com/store">
+                  <img src="img/logo-android.svg" width="43" height="46" alt="Приложение для Android">
+                  </a>
+                </li>
+                <li class="downloads__item">
+                  <a class="downloads__link downloads__link--windows" href="https://www.microsoft.com/en-us/store/apps">
+                  <img src="img/logo-microsoft.svg" width="46" height="46" alt="Приложение для Windows">
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="downloads__decscription">
+              <p> Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+            </div>
           </div>
-        <div class="downloads__app">
-          <ul class="downloads__list">
-            <li class="downloads__item">
-              <a class="downloads__link downloads__link--apple" href="https://www.apple.com/itunes/">
-              <img src="img/logo-apple.svg" width="47" height="56" alt="Приложение для iOS">
-              </a>
-            </li>
-            <li class="downloads__item">
-              <a class="downloads__link downloads__link--android" href="https://play.google.com/store">
-              <img src="img/logo-android.svg" width="43" height="46" alt="Приложение для Android">
-              </a>
-            </li>
-            <li class="downloads__item">
-              <a class="downloads__link downloads__link--windows" href="https://www.microsoft.com/en-us/store/apps">
-              <img src="img/logo-microsoft.svg" width="46" height="46" alt="Приложение для Windows">
-              </a>
-            </li>
-          </ul>
         </div>
-
-        <div class="downloads__decscription">
-          <p> Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-        </div>
+      </div>
     </header>
 
     <main class="page-main">
@@ -130,7 +137,7 @@
           <div class="advantages__example">
             <picture>
               <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png, img/iphone-screen-3-tablet@2x.png 2x">
-              <img src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x">
+              <img src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Всем привет!">
             </picture>
           </div>
         </div>
@@ -176,17 +183,17 @@
             <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </blockquote>
 
-            <button class="toggle__item toggle__item--active" type="button"></button>
-            <button class="toggle__item" type="button"></button>
-            <button class="toggle__item" type="button"></button>
+            <button class="toggle-item toggle-item--active" type="button"></button>
+            <button class="toggle-item" type="button"></button>
+            <button class="toggle-item" type="button"></button>
 
-            <button class="reviews__toggle toggle__arrow toggle__arrow--left">
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
+            <button class="reviews__toggle toggle-arrow toggle-arrow--left">
+              <svg version="1.1" id="Layer_1.2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
               <path d="M2.045,20.859L21.458,1.446c0.331-0.331,0.331-0.867,0-1.198c-0.33-0.331-0.867-0.331-1.197,0L0.248,20.261 c-0.331,0.33-0.331,0.867,0,1.197l20.013,20.013c0.164,0.165,0.382,0.248,0.599,0.248s0.434-0.083,0.599-0.248 c0.331-0.331,0.331-0.867,0-1.198L2.045,20.859z"/>
               </svg>
             </button>
 
-            <button class="reviews__toggle toggle__arrow toggle__arrow--right">
+            <button class="reviews__toggle toggle-arrow toggle-arrow--right">
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
               <path d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012 c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248 c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z"/>
               </svg>
@@ -197,27 +204,27 @@
       <section class="price">
         <div class="price__slider">
           <table class="price__table table-price">
-            <tbody><tr>
-              <th class="price-table__cell">
-                <div class="price-table__cell-inner">
+              <tr>
+              <th class="table-price__headline">
+                <div class="table-price__headline-inner">
                   <span class="table-price__name">Скрытая ячейка</span>
                   <span class="table-price__cost">Скрытая ячейка</span>
                 </div>
               </th>
-              <th class="price-table__cell">
-                <div class="price-table__cell-inner">
+              <th class="table-price__headline">
+                <div class="table-price__headline-inner">
                   <span class="table-price__name">База</span>
                   <span class="table-price__cost">1,99 USD</span>
                 </div>
               </th>
-              <th class="price-table__cell price-table__cell--hit">
-                <div class="table-price__header table-price__header--hit">
+              <th class="table-price__headline table-price__headline--hit">
+                <div class="table-price__headline-inner table-price__headline-inner--hit">
                   <span class="table-price__name">Стандарт</span>
                   <span class="table-price__cost">3,99 USD</span>
                 </div>
               </th>
-              <th class="price-table__cell">
-                <div class="price-table__cell-inner">
+              <th class="table-price__headline">
+                <div class="table-price__headline-inner">
                   <span class="table-price__name">Анлим</span>
                   <span class="table-price__cost">9,99 USD</span>
                 </div>
@@ -251,7 +258,6 @@
                 <span>Смайлики</span>
               </td>
             </tr>
-            <tr>
             <tr class="table-price__row">
               <td class="table-price__cell table-price__cell--no">
                 <span>Комментарии</span>
@@ -266,13 +272,13 @@
                 <span>Комментарии</span>
               </td>
             </tr>
-          </tbody></table>
+        </table>
         </div>
 
         <div class="toggle toggle--table">
-            <button class="toggle__item" type="button"></button>
-            <button class="toggle__item toggle__item--active" type="button"></button>
-            <button class="toggle__item" type="button"></button>
+            <button class="toggle-item" type="button"></button>
+            <button class="toggle-item toggle-item--active" type="button"></button>
+            <button class="toggle-item" type="button"></button>
           </div>
       </section>
 
@@ -280,15 +286,15 @@
           <p class="contacts__title">Остались вопросы?<br> Свяжитесь с нами!</p>
           <div class="contacts__list">
           <div class="contacts__item contacts__item--tel">
-            <h3>Звоните:</h3>
+            <span>Звоните:</span>
             <a class="contacts__list-link" href="tel:+78125556666">+7 (812) 555-66-66</a>
           </div>
           <div class="contacts__item contacts__item--letter">
-            <h3>Пишите:</h3>
+            <span>Пишите:</span>
             <a class="contacts__list-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </div>
           <div class="contacts__item contacts__item--adress">
-            <h3>Приезжайте:</h3>
+            <span>Приезжайте в гости:</span>
             <address class="contacts__list-address">ул. Большая <br> Конюшенная, 19/8</address>
           </div>
           </div>
@@ -340,11 +346,11 @@
           </a>
         </div>
 
-        <div class="footer__social">
+        <div class="footer-social">
         <ul class="page-footer__social-list social-list">
           <li class="social-list__item">
             <a class="social-list__link social-list__link--twitter" href="#" title="Twitter">
-            <svg width="17.5" height="14.663" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+            <svg width="17.5" height="14.663" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
             <g id="W6EeEF_1_">
             <g>
               <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.485,3.074,0.263,3.685,1.151 c0.694-0.226,1.372-0.47,2.072-0.691c-0.004,0.841-0.538,1.478-0.883,1.727C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.976-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.32,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.654,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.787,11.283,0.153z"/>
@@ -355,14 +361,14 @@
           </li>
           <li class="social-list__item">
             <a class="social-list__link social-list__link--facebook" href="#" title="Facebook">
-            <svg width="8.673" height="18.944" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
+            <svg width="8.673" height="18.944" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
             <path d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z"/>
             </svg>
             </a>
           </li>
           <li class="social-list__item">
             <a class="social-list__link social-list__link--youtube" href="#" title="Youtube">
-            <svg width="14.64" height="14" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
+            <svg width="14.64" height="14" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
             <path d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z"/>
             </svg>
             </a>

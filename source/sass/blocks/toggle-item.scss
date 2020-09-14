@@ -1,0 +1,33 @@
+.toggle-item {
+  padding:0;
+  margin: 15px 7px 0 7px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 6px;
+  height: 6px;
+  background: transparentize(#283645,.7);
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+
+  &:hover {
+    background: transparentize(#283645,.4);
+  }
+
+  &:active{
+    background: transparentize(#283645,.9)
+  }
+
+  @media (min-width: 960px) {
+    display: none;
+  }
+}
+
+.toggle-item--active {
+  width: 12px;
+  height: 12px;
+  border:3px solid #000;
+  background:#fff;
+  margin: 15px 7px 0 7px;
+}

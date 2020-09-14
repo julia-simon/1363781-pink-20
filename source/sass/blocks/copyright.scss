@@ -1,0 +1,57 @@
+.copyright {
+  display: block;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 18px;
+  color: #283645;
+  text-align: center;
+  vertical-align: middle;
+
+  span {
+    padding-left: 7px;
+
+    @media (min-height: 660px) {
+      padding-left: 0px;
+      margin-left: 0px;
+      padding-right: 5px;
+    }
+  }
+
+  @media (min-width:660px) {
+    display: inline-block;
+    text-align: right;
+    margin-right: 0px;
+    padding-top: 8px;
+    padding-right: 0px;
+  }
+
+  @media (min-width:960px) {
+    font-size: 18px;
+  }
+}
+
+.copyright__link {
+  padding-left: 10px;
+
+  @media (min-width: 660px) {
+    padding-left: 0px;
+    padding-right: 15px;
+  }
+
+  @media (min-width: 960px) {
+    padding-right: 0;
+  }
+
+  svg {
+    vertical-align:middle;
+    fill: #d22856;
+  }
+
+  &:hover svg{
+    fill: #283645;
+  }
+
+  &:active svg{
+    fill: rgba(40,54,69,.3);
+  }
+}

@@ -2,31 +2,31 @@
   position: absolute;
   bottom: -270px;
   width: 100%;
-  background-color: #1D2631;
+  background-color: $blue-darkest;
   color: white;
   text-align: center;
 
-  @media (min-width: 660px) {
+  @media (min-width: $tablets) {
     padding-left: 20px;
     bottom: 22px;
   }
 }
 
-.download__container {
+.downloads__container {
   height: 271px;
   width: 280px;
   margin: 0 auto;
 
-  @media (min-width: 660px) {
+  @media (min-width: $tablets) {
     position: absolute;
-    margin-top: -350px;
+    margin-top: -359px;
     width: 300px;
 
-    @media (min-width: 1200px) {
+    @media (min-width: $desktops) {
       width: 350px;
       position: absolute;
-      top: -65px;
-      left: 130px;
+      top: -51px;
+      left: -25px;
     }
   }
 }
@@ -38,14 +38,22 @@
   line-height: 18px;
   font-weight: 700;
 
-  @media (min-width: 1200px) {
+  @media (min-width: $desktops) {
     font-size: 21px;
     line-height: 18px;
   }
 }
 
 .downloads__app {
-  margin-top: 38px;
+  padding-top: 35px;
+
+  @media (min-width: 660px) {
+    padding-top: 45px;
+  }
+
+  @media (min-width: 960px) {
+    padding-top: 75px;
+  }
 }
 
 .downloads__list{
@@ -53,40 +61,61 @@
   flex-direction:row;
   justify-content: space-around;
   align-items: center;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 5px 15px 0;
+  margin: 0;
 
-  @media (min-width: 660px) {
+  @media (min-width: $tablets) {
+    padding-top: 6px;
     padding-left: 30px;
     padding-right: 30px;
+  }
+
+  @media (min-width: 960px) {
+    margin-left: 30px;
+    margin-right: 30px;
+    justify-content: space-between;
   }
 }
 
 .downloads__item {
-  padding: 10px;
+  padding: 10px 10px 0;
   list-style-type: none;
 }
 
 
 .downloads__button {
   padding: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
-  border: 3px solid white;
+  padding-left: 35px;
+  padding-right: 35px;
+  border: 3px solid $white;
   border-radius: 30px;
   text-decoration: none;
-  color: #FFFFFF;
+  color: $white;
   outline: none;
 
+  @media (min-width: 660px) {
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 12px;
+    padding-bottom: 15px;
+  }
+
+  @media (min-width: 960px) {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 12px;
+    padding-bottom: 10px;
+  }
+
   &:hover {
-    background: #FFFFFF;
+    background: $white;
     box-sizing: border-box;
     box-shadow: 0px 5px 7px rgba(1, 1, 1, 0.75);
-    color: #D22856;
+    color: $pink;
   }
 
   &:active {
-    color: transparentize(#D22856,.7);
+    color: transparentize($pink,.7);
   }
 }
 
@@ -96,7 +125,13 @@
   font-weight: 300;
   text-align: center;
 
-  @media (min-width: 660px) {
+  @media (min-width: $tablets) {
+    padding-top: 8px;
+    font-size: 18px;
+  }
+
+  @media (min-width: 960px) {
+    padding-top: 22px;
     font-size: 18px;
   }
 }

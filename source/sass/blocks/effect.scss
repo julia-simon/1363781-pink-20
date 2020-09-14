@@ -5,47 +5,72 @@
     display: block;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 960px) {
     background-color: #F2F2F2;
-    padding-top: 50px;
+    padding-top: 0px;
   }
 }
-
 
 .effect__wrapper {
   @media (min-width: 660px) {
     display: flex;
-    justify-content: center;
-    margin: 20px;
+    justify-content: space-between;
+    margin: 0px;
     height: 300px;
-    padding-top: 50px;
+    padding: 53px 35px 0 18px;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 960px) {
     margin: 0 20px;
-    padding: 0;
     height: 429px;
+    padding-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin: 0 auto;
+    width: 960px;
   }
 }
 
 
 .effect__image {
   @media (min-width: 660px) {
-    padding: 50px 100px 20px 50px;
+    padding: 50px 20px 20px 20px;
     background: url("../img/icon-timer.svg") no-repeat;
     background-size: 238px 276px;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 960px) {
     background-size: 298px 345px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-right: 85px;
+    margin-top: 20px;
   }
 }
 
 .effect__description {
-  @media (min-width: 1200px) {
+  @media (min-width: 960px) {
     br {
       display: none;
     }
+  }
+}
+
+.effect__title {
+  @media (min-width: 660px) {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    padding: 14px 0 0 70px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 960px) {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    padding: 85px 0 0 30px;
+    margin-bottom: 0;
   }
 }
 
@@ -60,38 +85,43 @@
     border-radius: 50%;
     padding: 20px 30px;
     position: relative;
-    left: -30px;
+    left: 0;
     top: 23px;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 960px) {
     font-size: 120px;
     padding: 30px 40px;
-    left: -25px;
-    top: 65px;
+    left: 25px;
+    top: 60px;
   }
 }
 
 .effect__text {
   @media (min-width: 660px) {
-    width: 310px;
     font-size: 14px;
     line-height: 24px;
+    padding: 0px 0 0 70px;
+    margin-top: 12px;
+    margin-bottom: 11px;
   }
 
-  @media (min-width: 1200px) {
-    width: 534px;
+  @media (min-width: 960px) {
     font-size: 18px;
     line-height: 30px;
+    padding: 10px 70px 20px 30px;
   }
 }
 
 .effect__link {
   text-decoration-line: underline;
   color: #D22856;
+  padding: 0 0 0 70px;
+  font-size: 14px;
 
-  @media (min-width: 1200px) {
+  @media (min-width: 960px) {
     font-size: 18px;
     line-height: 30px;
+    padding: 0 0 0 30px;
   }
 }

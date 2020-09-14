@@ -1,0 +1,32 @@
+.btn--form {
+  background: #2AAB6D;
+  border: 2px solid #2AAB6D;
+  border-radius: 1px;
+  width: 296px;
+  height: 59px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: 660px) {
+    margin: 0;
+  }
+
+  &:hover {
+    background: #1C9B5E;
+    border: 2px solid #1C9B5E;
+  }
+
+  &:active {
+    color: transparentize(#FFFFFF,.7)
+  }
+
+  &:disabled {
+    background: #E5E5E5;
+    border: 2px solid #E5E5E5;
+  }
+}

@@ -1,4 +1,5 @@
 // Начните писать стили здесь
+@import "variables.scss";
 @import "global/font.scss";
 @import "global/body.scss";
 @import "blocks/page-header.scss";
@@ -9,14 +10,18 @@
 @import "blocks/advantages.scss";
 @import "blocks/effect.scss";
 @import "blocks/reviews.scss";
-@import "blocks/toggle.scss";
+@import "blocks/toggle-item.scss";
+@import "blocks/toggle-arrow.scss";
 @import "blocks/price.scss";
+@import "blocks/table-price.scss";
 @import "blocks/contacts.scss";
 @import "blocks/galery.scss";
 @import "blocks/photo-items.scss";
 @import "blocks/photo-editor.scss";
+@import "blocks/btn.scss";
 @import "blocks/form.scss";
 @import "blocks/map.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/logo-footer.scss";
-@import "blocks/pop-up.scss";
+@import "blocks/social-list.scss";
+@import "blocks/copyright.scss";

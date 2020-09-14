@@ -5,7 +5,11 @@
 
 
   @media (min-width: 660px) {
-    margin: 23px 20px;
+    margin: 25px 20px;
+  }
+
+  @media (min-width: 960px) {
+    margin: 25px 0 0 0;
   }
 
   &:hover {
@@ -40,7 +44,7 @@
   fill: #FFFFFF;
   display: none;
 
-  @media (min-width: 1200px) {
+  @media (min-width: 960px) {
     display: block;
   }
 }
@@ -54,7 +58,7 @@
     display: block;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 960px) {
     display: none;
   }
 }
@@ -63,7 +67,7 @@
   display: none;
   fill: #D22856;
 
-  @media (min-width: 1200px) {
+  @media (min-width: 960px) {
     display: block;
   }
 }

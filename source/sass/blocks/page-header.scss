@@ -1,16 +1,16 @@
-.page-header {
-  @media (min-width: 1200px) {
-    display: flex;
-    flex-direction: row;
+.page-header__wrapper {
+  @media (min-width: 960px) {
+    width: 940px;
+    margin: 0 auto;
   }
 }
 
 .page-header--main {
-  padding-bottom: 284px;
+  padding-bottom: 288px;
   background-image: url(../img/iphone-hand-mobile@1x.png),
                     url(../img/bg-back-mobile@1x.jpg);
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: left bottom;
   background-color: #283645;
   color: #ffffff;
   margin: 0px;
@@ -31,27 +31,27 @@
     background-position: bottom;
     background-color: #283645;
     margin: 0px;
-    padding-bottom: 345px;
+    padding-bottom: 383px;
 
     @media (min-resolution: 2dppx) {
       background-image: url(../img/iphone-hand-tablet@2x.png),
                         url(../img/bg-back-tablet@2x.jpg);
-      background-size: 700px, 1200px;
+      background-size: 700px, 960px;
     }
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 960px) {
 
     height: 853px;
     background-image: url(../img/iphone-hand-desktop@1x.png),
                       url(../img/bg-back-desktop@1x.jpg);
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: bottom right -115px, bottom right 0;
     background-color: #283645;
     margin: 0px;
     padding: 0px;
-    display: flex;
-    align-items: flex-end;
+    /*display: flex;
+    align-items: flex-end;*/
 
     @media (min-resolution: 2dppx) {
       background-image: url(../img/iphone-hand-desktop@2x.png),
@@ -62,7 +62,7 @@
 }
 
 .page-header--inner {
-  padding-bottom: 20px;
+  padding-bottom: 68px;
   background-image: url(../img/bg-back-mobile@1x.jpg);
   background-repeat: no-repeat;
   background-color: #283645;
@@ -77,17 +77,17 @@
   }
 
   @media (min-width: 660px) {
-    padding-bottom: 50px;
+    padding-bottom: 128px;
     background-image: url(../img/bg-back-tablet@1x.jpg);
 
     @media (min-resolution: 2dppx) {
       background-image: url(../img/bg-back-tablet@2x.jpg);
-      background-size: 1200px;
+      background-size: 960px;
     }
   }
 
-  @media (min-width: 1200px) {
-    padding-bottom: 50px;
+  @media (min-width: 960px) {
+    padding-bottom: 85px;
     background-image: url(../img/bg-back-desktop@1x.jpg);
 
     @media (min-resolution: 2dppx) {
@@ -106,18 +106,40 @@
     height: 23px;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 960px) {
+    /*left: 110px;*/
+    top: 4px;
+  }
+
+  /*@media (min-width: 960px) {
     top: 0px;
     left: auto;
   }
 
   @media (min-width: 660px) {
     min-height: 110px;
-  }
+  }*/
 
   img {
     padding: 27px 20px;
     width: 145px;
     height: 40px;
+  }
+}
+
+.page-header__top {
+  min-height: 66px;
+  position: relative;
+  background-color: transparentize($black,.7);
+
+  @media (min-width: $tablets) {
+    min-height: 110px;
+  }
+}
+
+.page-header__top-botton {
+  @media (min-width: 960px) {
+    width: 940px;
+    margin: 0 auto;
   }
 }
