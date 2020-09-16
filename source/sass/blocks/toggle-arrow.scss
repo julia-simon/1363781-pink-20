@@ -23,7 +23,6 @@
 
     &:active {
       opacity: 0.1;
-      outline: none;
     }
   }
 }
@@ -31,18 +30,16 @@
 .toggle-arrow--left {
   left: 0;
 
-    &:active,
-    &:focus {
-      outline: none;
+  &:active,
+  &:focus {
   }
 }
 
 .toggle-arrow--right {
   right: 0;
 
-  &:active
+  &:active,
   &:focus {
-    outline: none;
   }
 }
 

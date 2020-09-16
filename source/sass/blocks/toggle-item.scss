@@ -1,22 +1,21 @@
 .toggle-item {
-  padding:0;
+  padding: 0;
   margin: 15px 7px 0 7px;
   display: inline-block;
   vertical-align: middle;
   width: 6px;
   height: 6px;
-  background: transparentize(#283645,.7);
+  background: transparentize(#283645, 0.7);
   border-radius: 20px;
   cursor: pointer;
   border: none;
-  outline: none;
 
   &:hover {
-    background: transparentize(#283645,.4);
+    background: transparentize(#283645, 0.4);
   }
 
-  &:active{
-    background: transparentize(#283645,.9)
+  &:active {
+    background: transparentize(#283645, 0.9)
   }
 
   @media (min-width: 960px) {
@@ -27,7 +26,7 @@
 .toggle-item--active {
   width: 12px;
   height: 12px;
-  border:3px solid #000;
-  background:#fff;
+  border: 3px solid #000000;
+  background: #ffffff;
   margin: 15px 7px 0 7px;
 }

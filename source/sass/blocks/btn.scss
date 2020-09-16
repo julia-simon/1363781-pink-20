@@ -1,6 +1,6 @@
 .btn--form {
-  background: #2AAB6D;
-  border: 2px solid #2AAB6D;
+  background: #2aab6d;
+  border: 2px solid #2aab6d;
   border-radius: 1px;
   width: 296px;
   height: 59px;
@@ -8,7 +8,7 @@
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   display: block;
   margin: 0 auto;
 
@@ -17,16 +17,16 @@
   }
 
   &:hover {
-    background: #1C9B5E;
-    border: 2px solid #1C9B5E;
+    background: #1c9b5e;
+    border: 2px solid #1c9b5e;
   }
 
   &:active {
-    color: transparentize(#FFFFFF,.7)
+    color: transparentize(#ffffff, 0.7)
   }
 
   &:disabled {
-    background: #E5E5E5;
-    border: 2px solid #E5E5E5;
+    background: #e5e5e5;
+    border: 2px solid #e5e5e5;
   }
 }

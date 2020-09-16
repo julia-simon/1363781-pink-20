@@ -56,9 +56,9 @@
   }
 }
 
-.downloads__list{
-  display:flex;
-  flex-direction:row;
+.downloads__list {
+  display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   padding: 5px 15px 0;
@@ -110,12 +110,12 @@
   &:hover {
     background: $white;
     box-sizing: border-box;
-    box-shadow: 0px 5px 7px rgba(1, 1, 1, 0.75);
+    box-shadow: 0 5px 7px rgba(1, 1, 1, 0.75);
     color: $pink;
   }
 
   &:active {
-    color: transparentize($pink,.7);
+    color: transparentize($pink, 0.7);
   }
 }
 

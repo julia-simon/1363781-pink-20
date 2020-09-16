@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <title>HTML Academy: Пинк</title>
     <link type="text/css" rel="stylesheet" href="css/styles.min.css"/>
+    <link rel="preload" href="/fonts/opensans.woff2" as="font">
+    <link rel="preload" href="/fonts/opensansbold.woff2" as="font">
   </head>
   <body class="page-body">
     <header class="page-header page-header--main">
@@ -136,6 +138,8 @@
 
           <div class="advantages__example">
             <picture>
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.webp 1x, img/iphone-screen-3-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/iphone-screen-mobile@1x.webp 1x, img/iphone-screen-mobile@2x.webp 2x">
               <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png, img/iphone-screen-3-tablet@2x.png 2x">
               <img src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Всем привет!">
             </picture>

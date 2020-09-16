@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <title>HTML Academy: Пинк</title>
     <link type="text/css" rel="stylesheet" href="css/styles.min.css"/>
+    <link rel="preload" href="/fonts/opensans.woff2" as="font">
+    <link rel="preload" href="/fonts/opensansbold.woff2" as="font">
   </head>
     <body class="page-body">
     <header class="page-header page-header--inner page-header--nojs">
@@ -137,7 +139,6 @@
                   <label class="form__label form__label--contact" for="phone">Номер телефона </label>
                   <input class="form__field form__field--contact" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
                 </div>
-
                 <div class="form__group-field form__group-field--contact">
                   <label class="form__label form__label--contact" for="mail">Адрес почты </label>
                   <input class="form__field form__field--contact" type="email" name="email" id="mail" placeholder="Введите почту *" required>
@@ -149,7 +150,7 @@
               <legend class="form__group-title">С каким приложением путешествовали?</legend>
               <ul class="form__group-list">
                 <li class="form__group-field form__group-field--selectable form__group-field--radio">
-                  <input class="form__field form__field--radio" type="radio" name="app-choice" id="ios" checked="">
+                  <input class="form__field form__field--radio" type="radio" name="app-choice" id="ios" checked="" tabindex="0">
                   <label class="form__label form__label--selectable" for="ios">Pink для iOS</label>
                 </li>
                 <li class="form__group-field form__group-field--selectable form__group-field--radio">
@@ -179,7 +180,7 @@
               <p class="form__pop-up-headline form__pop-up-headline--error">Что-то пошло не так!</p>
               <p class="form__pop-up-text form__pop-up-text--error">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
               <div class="form__group form__group--button">
-              <button class="btn btn--form" type="submit">Ok</button>
+              <button class="btn btn--form " type="submit">Ok</button>
             </div>
           </div>
 
@@ -196,7 +197,7 @@
       </section>
     </main>
 
-     <footer class="page-footer">
+    <footer class="page-footer">
       <div class="page-footer__container">
         <div class="page-footer__logo logo-footer">
           <a href="index.html">

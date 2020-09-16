@@ -6,8 +6,8 @@
   }
 
   @media (min-width: 960px) {
-    background-color: #F2F2F2;
-    padding-top: 0px;
+    background-color: f2f2f2;
+    padding-top: 0;
   }
 }
 
@@ -15,7 +15,7 @@
   @media (min-width: 660px) {
     display: flex;
     justify-content: space-between;
-    margin: 0px;
+    margin: 0;
     height: 300px;
     padding: 53px 35px 0 18px;
   }
@@ -23,9 +23,7 @@
   @media (min-width: 960px) {
     margin: 0 20px;
     height: 429px;
-    padding-top: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+    padding-top: 0;
     margin: 0 auto;
     width: 960px;
   }
@@ -41,8 +39,8 @@
 
   @media (min-width: 960px) {
     background-size: 298px 345px;
-    padding-left: 0px;
-    padding-bottom: 0px;
+    padding-left: 0;
+    padding-bottom: 0;
     padding-right: 85px;
     margin-top: 20px;
   }
@@ -101,7 +99,7 @@
   @media (min-width: 660px) {
     font-size: 14px;
     line-height: 24px;
-    padding: 0px 0 0 70px;
+    padding: 0 0 0 70px;
     margin-top: 12px;
     margin-bottom: 11px;
   }
@@ -115,7 +113,7 @@
 
 .effect__link {
   text-decoration-line: underline;
-  color: #D22856;
+  color: #d22856;
   padding: 0 0 0 70px;
   font-size: 14px;
 

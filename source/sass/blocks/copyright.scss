@@ -11,21 +11,21 @@
     padding-left: 7px;
 
     @media (min-height: 660px) {
-      padding-left: 0px;
-      margin-left: 0px;
+      padding-left: 0;
+      margin-left: 0;
       padding-right: 5px;
     }
   }
 
-  @media (min-width:660px) {
+  @media (min-width: 660px) {
     display: inline-block;
     text-align: right;
-    margin-right: 0px;
+    margin-right: 0;
     padding-top: 8px;
-    padding-right: 0px;
+    padding-right: 0;
   }
 
-  @media (min-width:960px) {
+  @media (min-width: 960px) {
     font-size: 18px;
   }
 }
@@ -34,7 +34,7 @@
   padding-left: 10px;
 
   @media (min-width: 660px) {
-    padding-left: 0px;
+    padding-left: 0;
     padding-right: 15px;
   }
 
@@ -43,15 +43,15 @@
   }
 
   svg {
-    vertical-align:middle;
+    vertical-align: middle;
     fill: #d22856;
   }
 
-  &:hover svg{
+  &:hover svg {
     fill: #283645;
   }
 
-  &:active svg{
-    fill: rgba(40,54,69,.3);
+  &:active svg {
+    fill: rgba(40, 54, 69, 0.3);
   }
 }

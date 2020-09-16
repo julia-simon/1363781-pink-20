@@ -58,7 +58,7 @@
   padding-bottom: 12px;
 
   @media (min-width: 660px) {
-    height: 48px;
+    min-height: 48px;
     padding-bottom: 15px;
 
   }
@@ -70,7 +70,7 @@
 
   &:after {
     width: 140px;
-    height: 36px;
+    min-height: 36px;
     font-size: 12px;
     line-height: 36px;
     font-weight: 700;
@@ -169,7 +169,7 @@
     width: 100%;
 
     @media (min-width: 660px) {
-      height: 509px;
+      min-height: 509px;
     }
   }
 }
